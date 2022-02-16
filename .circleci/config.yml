@@ -291,7 +291,7 @@ jobs:
             export API_URL=$(cat .circleci/api_url.txt)
             echo API_ENV=${API_URL} > frontend/.env
             echo ENVIRONMENT=production >> "frontend/.env"
-            echo NODE_ENV=production >> "frontend/.env
+            echo NODE_ENV=production >> "frontend/.env"
             cat frontend/.env
             cd frontend
             cat .env
@@ -318,7 +318,7 @@ jobs:
       - restore_cache:
           keys: [backend-build]
       - attach_workspace:
-          at: /tmp/artifacts
+          at: ~/
       - run:
           name: env variables
           command: |
