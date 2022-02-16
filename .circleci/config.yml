@@ -213,7 +213,7 @@ jobs:
             - "3c:45:53:0b:ac:b4:bb:aa:79:dd:af:b4:86:77:15:59"
       # attach workspace
       - attach_workspace:
-          at: ~/
+          at: /tmp/.circleci/ansible
       - run:
           name: Install dependencies
           command: |
