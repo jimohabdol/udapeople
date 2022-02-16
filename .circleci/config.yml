@@ -279,7 +279,6 @@ jobs:
             cd backend
             cat .env
             npm install
-            npm run migrations:revert
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
       - run:
